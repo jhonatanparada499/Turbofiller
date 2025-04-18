@@ -1,10 +1,17 @@
 {
-    "name": "Hello Extensions",
-    "description": "Base Level Extension",
+    "name": "Turbofiller",
+    "description": "Autofill any form",
     "version": "1.0",
     "manifest_version": 3,
     "action": {
-      "default_popup": "index.html",
-      "default_icon": "ext_icon.png"
-    }
+      "default_popup": "popup/index.html",
+      "default_icon": "images/ext_icon.png"
+    },
+    "content_scripts": [
+      {
+        "js": ["scripts/content.js"],
+        "matches": ["<all_urls>"]
+      }
+    ]
   }
+
