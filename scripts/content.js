@@ -1,15 +1,19 @@
 const inputs = document.getElementsByTagName("input");
 const input_test = document.getElementById("input_ID");
 
-const parent = input_test.parentNode.children
-console.log(parent);
-
 // Find Span Elements in Family Tree
-function FSEFT (HTMLelement){
-    //HTMLelement
+function FSEFT(elmnt) {
+    // Get Children of the Parent HTMLElement
+
+    // Define the parent of elmnt
+    const elmntParent = elmnt.parentElement
+
+    // Define the Children of the parent of elmnt
+    const elmntParentChildren = elmntParent.children
+
 }
 
 // Get Element With the Longest Text Content From a Collection
-function GEWLTCFC (collection){
+function GEWLTCFC(collection) {
 
 }
